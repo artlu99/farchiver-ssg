@@ -1,0 +1,49 @@
+import { AssetDescription } from 'types'
+import { shortenHash } from 'helpers/formatUtils'
+import { tarballsBaseUrl } from 'helpers/getAssetsUrls'
+import dayjs from 'dayjs'
+
+const TIMESTAMP_FORMAT = 'YYYY-MM-DD'
+
+const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
+  <div className="flex flex-col w-full">
+    <div className="divider divider-start">{sectionTitle}</div>
+    <div className="overflow-x-auto">
+      <table className="table">
+        <thead>
+          <tr>
+            <th>description</th>
+            <th>date generated</th>
+            <th>filename</th>
+            <th>IPFS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {assets.map((a) => {
+            const timestampStr = dayjs
+              .unix(a.timestamp)
+              .format(TIMESTAMP_FORMAT)
+            return (
+              <tr className="hover">
+                <th>{a.description}</th>
+                <td>{timestampStr}</td>
+                <td>
+                  <a
+                    href={tarballsBaseUrl + a.tarball + '.tar.gz'}
+                    alt={a.description}
+                  >
+                    {a.tarball + '.tar.gz'}
+                  </a>
+                </td>
+                <td>
+                  <a href={'ipfs://' + a.cid}>{shortenHash(a.cid)}</a>
+                </td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+)
+export default assetsTable

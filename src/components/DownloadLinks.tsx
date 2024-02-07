@@ -1,0 +1,31 @@
+import { FunctionComponent } from 'preact'
+import { ipfsPublicFolderCid, tarballsBaseUrl } from 'helpers/getAssetsUrls'
+
+interface DownloadLinksProps
+  extends Omit<React.HTMLProps<HTMLAnchorElement>, 'href'> {
+  filename: string
+  text: string
+  CID?: string
+}
+const DownloadLinks: FunctionComponent<DownloadLinksProps> = ({
+  filename,
+  text,
+  CID,
+}: DownloadLinksProps) =>
+  CID ? (
+    <span class="text-sm">
+      [<a href={tarballsBaseUrl + filename}>{text}</a>|
+      <a
+        href={`https://gateway.pinata.cloud/ipfs/${ipfsPublicFolderCid}/${filename}`}
+      >
+        Pinata
+      </a>
+      |<a href={`ipfs://${CID}`}>IPFS</a>]
+    </span>
+  ) : (
+    <span class="text-sm">
+      [<a href={tarballsBaseUrl + filename}>{text}</a>]
+    </span>
+  )
+
+export default DownloadLinks
