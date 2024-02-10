@@ -1,7 +1,7 @@
 import { Suspense, useState } from 'preact/compat'
+import BottomNavBar from 'components/BottomNavBar'
 import Castimonials from 'components/Castimonials'
 import Menu from 'components/Menu'
-import NavBar from 'components/NavBar'
 import Order from 'components/Order'
 import Pricing from 'components/Pricing'
 import Public from 'components/Public'
@@ -15,7 +15,7 @@ export default function LayoutMainPage() {
   return (
     <div className="flex flex-col h-screen">
       <div
-        className="hero w-1024 "
+        className="hero w-1024 min-h-screen"
         style={{
           backgroundImage: `url(${fiofeURL})`,
         }}
@@ -55,7 +55,7 @@ export default function LayoutMainPage() {
           </div>
         </div>
       </div>
-      <NavBar />
+      <BottomNavBar />
     </div>
   )
 }
