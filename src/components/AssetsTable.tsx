@@ -44,7 +44,7 @@ const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
                 <td>
                   {a.cid ? (
                     <>
-                      <a href={'ipfs://' + a.cid}>{shortenHash(a.cid)}</a>
+                      <a href={'ipfs://' + a.cid}>{shortenHash(a.cid)}</a>{' '}
                       <CopyIcon
                         style={{
                           display: 'inline-block',
