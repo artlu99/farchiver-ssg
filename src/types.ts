@@ -11,5 +11,6 @@ export type AssetDescription = {
   sharedwith: string[]
   owners: string[]
   description: string
+  encrypted?: boolean
   cid?: string
 }

@@ -29,10 +29,15 @@ const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
                 <td>{timestampStr}</td>
                 <td>
                   <a
-                    href={tarballsBaseUrl + a.tarball + '.tar.gz'}
+                    href={
+                      tarballsBaseUrl +
+                      a.tarball +
+                      '.tar.gz' +
+                      (a.encrypted ? '.gpg' : '')
+                    }
                     alt={a.description}
                   >
-                    {a.tarball + '.tar.gz'}
+                    {a.tarball + '.tar.gz' + (a.encrypted ? '.gpg' : '')}
                   </a>
                 </td>
                 <td>
