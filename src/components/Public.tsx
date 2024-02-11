@@ -10,7 +10,7 @@ export default function () {
           the proto inverse-AMA thread by @shoni.eth{' '}
           <DownloadLinks
             filename={'shoni.eth_first_inverse_AMA_thread_20231229.tar.gz'}
-            text={'90KB download'}
+            text={'90KB'}
             CID={'QmatFvWRHTHVUJBFR9tJbXyyK9JgNHq8fGoJvZyHDFiC6g'}
           />
         </li>
@@ -21,7 +21,7 @@ export default function () {
           epic @keccers.eth thread, requested by @shazow.eth{' '}
           <DownloadLinks
             filename={'keccers_thread_20231222.tar.gz'}
-            text={'32KB download'}
+            text={'32KB'}
             CID={'QmVtELzhaSMEiZ4HujQ1gGK3AuvDSfuBZ3BEpJTALDuee5'}
           />
         </li>
@@ -32,7 +32,7 @@ export default function () {
           the proto channels thread, NBA Game 5{' '}
           <DownloadLinks
             filename={'dwr.eth_first_channel_nba_game_5_thread.tar.gz'}
-            text={'14KB download'}
+            text={'14KB'}
             CID={'QmdwSNiV2V21sSSzTzHawaFT2Cq1qmbANVN1bekBQb4PqU'}
           />
         </li>
@@ -43,7 +43,7 @@ export default function () {
           the OG @pushix thread, why Farchiver exists{' '}
           <DownloadLinks
             filename={'pushix_thread_20230409.tar.gz'}
-            text={'7KB download'}
+            text={'7KB'}
             CID={'QmW3g7v4HPNA5GzEKybRrLNQLdZ5FkZyT5mrRVvSHZDBkJ'}
           />
         </li>
@@ -54,7 +54,7 @@ export default function () {
           @dwr.eth's MTD, including wowow{' '}
           <DownloadLinks
             filename={'dwr.eth_mtd_20231109.tar.gz'}
-            text={'276KB download'}
+            text={'276KB'}
             CID={'QmVkQrWfok5rizr9vXxSQNnDmL4TNfmuERiKSVys2rVTM2'}
           />
         </li>
@@ -62,7 +62,7 @@ export default function () {
           @vitalik.eth's last month{' '}
           <DownloadLinks
             filename={'vitalik.eth_1m_20231109.tar.gz'}
-            text={'1.4MB download'}
+            text={'1.4MB'}
             CID={'QmR3d2RN4wgUy43rBjCpCJxqFraxTtCazTHTScmjHKAadV'}
           />
         </li>

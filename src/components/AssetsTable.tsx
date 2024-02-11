@@ -1,4 +1,5 @@
 import { AssetDescription } from 'types'
+import { CopyIcon } from 'lucide-react'
 import { shortenHash } from 'helpers/formatUtils'
 import { tarballsBaseUrl } from 'helpers/getAssetsUrls'
 import dayjs from 'dayjs'
@@ -41,7 +42,24 @@ const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
                   </a>
                 </td>
                 <td>
-                  <a href={'ipfs://' + a.cid}>{shortenHash(a.cid)}</a>
+                  {a.cid ? (
+                    <>
+                      <a href={'ipfs://' + a.cid}>{shortenHash(a.cid)}</a>
+                      <CopyIcon
+                        style={{
+                          display: 'inline-block',
+                          width: '1em',
+                          height: '1em',
+                        }}
+                        class="text-xs cursor-pointer"
+                        onClick={async () => {
+                          await navigator.clipboard.writeText(a.cid ?? '')
+                        }}
+                      />
+                    </>
+                  ) : (
+                    ''
+                  )}
                 </td>
               </tr>
             )
