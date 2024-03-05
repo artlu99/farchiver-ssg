@@ -8,12 +8,12 @@ export default function () {
 
   return (
     <div className="text-left">
-      <h3>New customers (incl. free trial):</h3>
+      <h3>New customers:</h3>
       <h2>
         <Signup />
       </h2>
       <hr />
-      <h3>Whitelist + Existing customers (incl. free trial):</h3>
+      <h3>Whitelist + Existing customers:</h3>
       {user ? (
         <h2>
           Access the <Link href="/private">Farchive</Link>

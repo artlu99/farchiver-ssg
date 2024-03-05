@@ -7,17 +7,17 @@ export function getUserCount() {
   )
 }
 
-export function getBetaTestersCount(): number {
+function getBetaTestersCount(): number {
   const count: number = parseInt(import.meta.env.VITE_COUNT_BETA_TESTERS, 10)
   return count
 }
 
-export function getEarlyBirdsCount(): number {
+function getEarlyBirdsCount(): number {
   const count = parseInt(import.meta.env.VITE_COUNT_EARLY_BIRDS)
   return count
 }
 
-export function getFreeTrialsCount(): number {
+function getFreeTrialsCount(): number {
   const count = parseInt(import.meta.env.VITE_COUNT_FREE_TRIALS)
   return count
 }
