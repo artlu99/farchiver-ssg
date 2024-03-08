@@ -1,4 +1,4 @@
 import { atom } from 'jotai'
-import { getUserCount } from 'helpers/getUserCounts'
+import getUserCount from 'helpers/getUserCounts'
 
 export default atom(getUserCount())
