@@ -1,8 +1,5 @@
 import { AssetDescription, FidDetail } from 'types'
-import { DynamicWidget, getAuthToken } from '@dynamic-labs/sdk-react-core'
-import { Link } from 'wouter'
-import { MoveLeft } from 'lucide-react'
-import { useDynamicContext } from '@dynamic-labs/sdk-react-core'
+import { getAuthToken, useDynamicContext } from '@dynamic-labs/sdk-react-core'
 import { useEffect, useState } from 'preact/hooks'
 import ExternalLink from 'components/ExternalLink'
 import Signup from 'components/Signup'
@@ -76,7 +73,6 @@ export default function Private() {
 
   return (
     <div>
-      <DynamicWidget />
       <div>
         {user ? null : connectMessage}
         {user ? null : signupMessage}
@@ -88,13 +84,6 @@ export default function Private() {
         {fidDetail && owned.length > 0 ? assetsTable('Owned', owned) : null}
         {fidDetail && shared.length > 0 ? assetsTable('Shared', shared) : null}
         {display ? <div className="divider"></div> : null}
-      </div>
-      <div>
-        <Link href="/">
-          <button className="btn btn-neutral">
-            <MoveLeft />
-          </button>
-        </Link>
       </div>
     </div>
   )

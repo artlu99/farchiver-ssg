@@ -1,61 +1,55 @@
-import { Suspense, useState } from 'preact/compat'
-import BottomNavBar from 'components/BottomNavBar'
+import { Suspense, useEffect } from 'preact/compat'
+import { useAtom } from 'jotai'
+import { useDynamicContext } from '@dynamic-labs/sdk-react-core'
+import { useLocation } from 'wouter'
+
 import Castimonials from 'components/Castimonials'
-import Menu from 'components/Menu'
+import Navbar from 'components/Navbar'
 import Order from 'components/Order'
 import Pricing from 'components/Pricing'
+import Private from 'components/Private'
 import Public from 'components/Public'
+import TwoFooter from 'components/TwoFooter'
 import Viz from 'components/Viz'
-
-const fiofeURL =
-  'https://remote-image.decentralized-content.com/image?url=https%3A%2F%2Fipfs.decentralized-content.com%2Fipfs%2Fbafybeihmprdfji5meevfujdy6syunmxxzqyb2bg57kws2sz6wk5xwgotoa&w=1920&q=75'
+import themeSelection from 'atoms/themeSelection'
 
 export default function LayoutMainPage() {
-  const [selectedCategory, setSelectedCategory] = useState('VIZ')
+  const [theme] = useAtom(themeSelection)
+  useEffect(() => {
+    const body = document.body
+    body.setAttribute('data-theme', theme)
+  }, [theme])
+
+  const { user } = useDynamicContext()
+  const [location] = useLocation()
+
+  const isCastimonial = location === '/castimonials'
+  const isPublic = location === '/public'
+
   return (
-    <div className="flex flex-col h-screen">
-      <div
-        className="hero w-1024 min-h-screen"
-        style={{
-          backgroundImage: `url(${fiofeURL})`,
-        }}
-      >
-        <div className="hero-overlay bg-opacity-60" />
-        <div className="text-center hero-content text-neutral-content">
-          <div className="w-full">
-            <div>
-              {selectedCategory === 'ORDER' ? (
-                <div className="top-6 mb-6 text-3xl font-bold">
-                  Farcaster Is Open For Everyone
-                </div>
-              ) : (
-                <button
-                  class="btn btn-wide btn-accent"
-                  onClick={() => setSelectedCategory('ORDER')}
-                >
-                  Enter
-                </button>
-              )}
+    <Suspense fallback={<p>Loading...</p>}>
+      <div className="flex flex-col h-screen">
+        <Navbar />
+        <div className="flex-1 bg-base-100">
+          {isCastimonial ? (
+            <Castimonials />
+          ) : isPublic ? (
+            <Public />
+          ) : user ? (
+            <Private />
+          ) : (
+            <div className="prose mx-auto max-w-prose">
+              <div className="mx-5">
+                <Pricing />
+                {user ? null : <Order />}
+                <hr />
+              </div>
+              <Viz />
             </div>
-            <div className="container mx-auto max-w-prose p-10 prose">
-              <Suspense fallback={<p>Loading...</p>}>
-                <Menu
-                  selectedCategory={selectedCategory}
-                  setSelectedCategory={setSelectedCategory}
-                />
-                <div className="container mx-auto max-w-prose justify-center prose">
-                  {selectedCategory == 'VIZ' && <Viz />}
-                  {selectedCategory == 'PUBLIC (FREE)' && <Public />}
-                  {selectedCategory == 'PRICING' && <Pricing />}
-                  {selectedCategory == 'ORDER' && <Order />}
-                  {selectedCategory == 'CASTIMONIALS' && <Castimonials />}
-                </div>
-              </Suspense>
-            </div>
-          </div>
+          )}
         </div>
+        <TwoFooter />
       </div>
-      <BottomNavBar />
-    </div>
+    </Suspense>
   )
 }

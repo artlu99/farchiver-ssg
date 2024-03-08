@@ -1,4 +1,4 @@
-export function getUserCount() {
+export default function getUserCount() {
   return (
     getBetaTestersCount() +
     getEarlyBirdsCount() +

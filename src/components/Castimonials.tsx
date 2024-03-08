@@ -19,14 +19,15 @@ export default function () {
   }, [])
 
   return (
-    <div className="text-left">
-      <h3>The easiest way to save individual casts</h3>
-      <h4>Permanence provided by Pinata 🤝 IPFS</h4>
-      <div>{data1}</div>
-      <h4>WIP 👀</h4>
-      <h3>
-        <UserCount />
-      </h3>
+    <div className="hero h-full bg-base-100">
+      <div className="hero-content min-h-screen text-center text-content">
+        <div className="prose text-left">
+          <h3>The easiest way to save individual casts</h3>
+          <h4>Permanence provided by Pinata 🤝 IPFS</h4>
+          <div>{data1}</div>
+          <h3>WIP 👀</h3>
+        </div>
+      </div>
     </div>
   )
 }
