@@ -1,10 +1,10 @@
 import 'react-farcaster-embed/dist/styles.css'
 import { FarcasterEmbed } from 'react-farcaster-embed/dist/client'
 
+const username='antimofm.eth';
+const hash='0x724cbf';
+
 export default function () {
-  const username='antimofm.eth';
-  const hash='0x724cbf';
-        
   return (
     <div className="hero h-full bg-base-100">
       <div className="hero-content min-h-screen text-center text-content">

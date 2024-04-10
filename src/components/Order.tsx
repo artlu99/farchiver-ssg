@@ -1,7 +1,5 @@
-import { Link } from 'wouter'
 import { useDynamicContext } from '@dynamic-labs/sdk-react-core'
 import Signup from 'components/Signup'
-import UserCount from 'components/UserCount'
 
 export default function () {
   const { user } = useDynamicContext()

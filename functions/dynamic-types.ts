@@ -49,7 +49,7 @@ export interface JwtVerifiedCredential {
    */
   oauth_account_photos?: Array<string>
 }
-export enum JwtVerifiedCredentialFormatEnum {
+enum JwtVerifiedCredentialFormatEnum {
   Blockchain = 'blockchain',
   Email = 'email',
   Oauth = 'oauth',

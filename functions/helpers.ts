@@ -1,9 +1,6 @@
 import { JwtVerifiedCredential } from './dynamic-types'
 import { Env, FidDetail } from './types'
 
-export const addressesEqual = (address1: string, address2: string): boolean =>
-  address1.toLowerCase() === address2.toLowerCase()
-
 export const allowCorsHeaders = () => {
   return { headers: { 'Access-Control-Allow-Origin': '*' } }
 }
@@ -34,30 +31,6 @@ export const newResponse = (res: string, env: Env) =>
 export const misdirection = (env: Env) => newResponse('[]', env)
 
 export const redirection = (url: string) => Response.redirect(url, 301)
-
-export const getFormatFromPayload = (payload) => {
-  const verifiedCredentials: JwtVerifiedCredential[] =
-    payload.verified_credentials ?? []
-
-  const format =
-    verifiedCredentials?.length > 0
-      ? verifiedCredentials[0].format ?? undefined
-      : undefined
-
-  return format
-}
-
-export const getAddressFromPayload = (payload) => {
-  const verifiedCredentials: JwtVerifiedCredential[] =
-    payload.verified_credentials ?? []
-
-  const address =
-    verifiedCredentials?.length > 0
-      ? verifiedCredentials[0].address ?? undefined
-      : undefined
-
-  return address
-}
 
 export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
   const verifiedCredentials: JwtVerifiedCredential[] =

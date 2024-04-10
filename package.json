@@ -10,7 +10,6 @@
     "preview": "yarn build && yarn vite preview"
   },
   "dependencies": {
-    "@dynamic-labs/ethereum": "^1.4.6",
     "@dynamic-labs/sdk-react-core": "^1.4.6",
     "axios": "^1.6.8",
     "dayjs": "^1.11.10",

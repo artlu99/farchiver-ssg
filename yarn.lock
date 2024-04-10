@@ -1935,7 +1935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dynamic-labs/ethereum@npm:1.4.6, @dynamic-labs/ethereum@npm:^1.4.6":
+"@dynamic-labs/ethereum@npm:1.4.6":
   version: 1.4.6
   resolution: "@dynamic-labs/ethereum@npm:1.4.6"
   dependencies:
@@ -9608,7 +9608,6 @@ __metadata:
   resolution: "farchiver-ssg@workspace:."
   dependencies:
     "@cloudflare/workers-types": ^4.20240405.0
-    "@dynamic-labs/ethereum": ^1.4.6
     "@dynamic-labs/sdk-react-core": ^1.4.6
     "@preact/preset-vite": ^2.8.2
     "@tailwindcss/typography": ^0.5.12
