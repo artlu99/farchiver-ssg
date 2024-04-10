@@ -63,15 +63,11 @@ export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
   const verifiedCredentials: JwtVerifiedCredential[] =
     payload.verified_credentials ?? []
 
-  console.log('payload:', JSON.stringify(payload))
-  console.log('verifiedCredentials:', JSON.stringify(verifiedCredentials))
-
   const fid =
     verifiedCredentials?.length > 0
       ? verifiedCredentials[0].oauth_account_id ?? undefined
       : undefined
 
-  console.log('fid:', JSON.stringify(fid))
   const fidDetail = fid
     ? {
         fid: fid,
@@ -83,7 +79,7 @@ export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
         connected_addresses: [],
       }
     : undefined
-  console.log('fidDetail:', JSON.stringify(fidDetail))
+
   return fidDetail
 }
 

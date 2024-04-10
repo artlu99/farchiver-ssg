@@ -74,9 +74,6 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     format === JwtVerifiedCredentialFormatEnum.Blockchain
       ? await getFidDetailFromAddress(env, address)
       : getFidDetailFromPayload(payload)
-  console.log("format:", format)
-  console.log("BlockchainEnum:", JwtVerifiedCredentialFormatEnum.Blockchain)
-  console.log("fidDetail in a.ts:", fidDetail)
 
   const assetDescriptions: AssetDescription[] = JSON.parse(
     await env.KV.get('assets')
