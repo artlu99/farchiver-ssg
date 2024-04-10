@@ -65,6 +65,7 @@ export default function Private() {
         .catch((err) => console.log(err))
   }, [dynamicJwtToken])
 
+  console.log("token:", dynamicJwtToken)
   console.log("assets:", assets);
   
   const fidDetail = assets.fidDetail

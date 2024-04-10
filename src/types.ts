@@ -1,7 +1,7 @@
 export type FidDetail = {
   fid: string
   username: string
-  pfp: string
+  pfp?: string
   connected_addresses: string[]
 }
 

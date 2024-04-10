@@ -1,5 +1,5 @@
 import { JwtVerifiedCredential } from './dynamic-types'
-import { Env } from './types'
+import { Env, FidDetail } from './types'
 
 export const addressesEqual = (address1: string, address2: string): boolean =>
   address1.toLowerCase() === address2.toLowerCase()
@@ -59,7 +59,7 @@ export const getAddressFromPayload = (payload) => {
   return address
 }
 
-export const getFidDetailFromPayload = (payload) => {
+export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
   const verifiedCredentials: JwtVerifiedCredential[] =
     payload.verified_credentials ?? []
 
@@ -72,7 +72,10 @@ export const getFidDetailFromPayload = (payload) => {
     ? {
         fid: fid,
         username: verifiedCredentials[0].oauthUsername,
-        pfp: verifiedCredentials[0].oauthAccountPhotos,
+        pfp:
+          verifiedCredentials[0].oauthAccountPhotos.length > 0
+            ? verifiedCredentials[0].oauthAccountPhotos[0]
+            : undefined,
         connected_addresses: [],
       }
     : undefined
