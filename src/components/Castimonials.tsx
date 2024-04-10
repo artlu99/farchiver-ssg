@@ -3,7 +3,7 @@ import { FarcasterEmbed } from 'react-farcaster-embed/dist/client'
 
 export default function () {
   const username='antimofm.eth';
-  const hash='https://warpcast.com/antimofm.eth/0x724cbf';
+  const hash='0x724cbf';
         
   return (
     <div className="hero h-full bg-base-100">
