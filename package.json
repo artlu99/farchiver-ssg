@@ -10,16 +10,16 @@
     "preview": "yarn build && yarn vite preview"
   },
   "dependencies": {
-    "@dynamic-labs/ethereum": "^0.19.6",
-    "@dynamic-labs/sdk-react-core": "^0.19.6",
-    "axios": "^1.6.2",
+    "@dynamic-labs/ethereum": "^1.4.6",
+    "@dynamic-labs/sdk-react-core": "^1.4.6",
+    "axios": "^1.6.8",
     "dayjs": "^1.11.10",
-    "jotai": "^2.5.1",
-    "lucide-react": "^0.294.0",
-    "preact": "^10.18.2",
-    "react-farcaster-embed": "^1.1.1",
-    "viem": "^1.20.0",
-    "wouter": "^2.12.1"
+    "jotai": "^2.8.0",
+    "lucide-react": "^0.367.0",
+    "preact": "^10.20.2",
+    "react-farcaster-embed": "^1.4.7",
+    "viem": "^2.9.15",
+    "wouter": "^3.1.2"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231121.0",
