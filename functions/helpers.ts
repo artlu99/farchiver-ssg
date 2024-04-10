@@ -63,12 +63,16 @@ export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
   const verifiedCredentials: JwtVerifiedCredential[] =
     payload.verified_credentials ?? []
 
+  console.log('payload:', JSON.stringify(payload))
+  console.log('verifiedCredentials:', JSON.stringify(verifiedCredentials))
+
   const fid =
     verifiedCredentials?.length > 0
       ? verifiedCredentials[0].oauthAccountId ?? undefined
       : undefined
 
-  return fid
+  console.log('fid:', JSON.stringify(fid))
+  const fidDetail = fid
     ? {
         fid: fid,
         username: verifiedCredentials[0].oauthUsername,
@@ -79,6 +83,8 @@ export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
         connected_addresses: [],
       }
     : undefined
+  console.log('fidDetail:', JSON.stringify(fidDetail))
+  return fidDetail
 }
 
 // radash

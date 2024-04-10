@@ -70,12 +70,10 @@ export const onRequest: PagesFunction<Env> = async (context) => {
 
   const address = getAddressFromPayload(payload) ?? 'undefined'
   const format = getFormatFromPayload(payload)
-  console.log('format:', format)
   const fidDetail =
     format === JwtVerifiedCredentialFormatEnum.Blockchain
       ? await getFidDetailFromAddress(env, address)
       : getFidDetailFromPayload(payload)
-  console.log('fidDetail:', JSON.stringify(fidDetail))
 
   const assetDescriptions: AssetDescription[] = JSON.parse(
     await env.KV.get('assets')

@@ -65,9 +65,6 @@ export default function Private() {
         .catch((err) => console.log(err))
   }, [dynamicJwtToken])
 
-  console.log("token:", dynamicJwtToken)
-  console.log("assets:", assets);
-  
   const fidDetail = assets.fidDetail
   const fid = assets.fidDetail?.fid ?? 'undefined'
   const owned = fid === 'undefined' ? [] : assets.owned
