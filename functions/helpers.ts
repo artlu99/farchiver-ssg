@@ -68,17 +68,17 @@ export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
 
   const fid =
     verifiedCredentials?.length > 0
-      ? verifiedCredentials[0].oauthAccountId ?? undefined
+      ? verifiedCredentials[0].oauth_account_id ?? undefined
       : undefined
 
   console.log('fid:', JSON.stringify(fid))
   const fidDetail = fid
     ? {
         fid: fid,
-        username: verifiedCredentials[0].oauthUsername,
+        username: verifiedCredentials[0].oauth_username,
         pfp:
-          verifiedCredentials[0].oauthAccountPhotos.length > 0
-            ? verifiedCredentials[0].oauthAccountPhotos[0]
+          verifiedCredentials[0].oauth_account_photos.length > 0
+            ? verifiedCredentials[0].oauth_account_photos[0]
             : undefined,
         connected_addresses: [],
       }

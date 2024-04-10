@@ -83,7 +83,7 @@ export interface JwtVerifiedCredential {
    * @type {string}
    * @memberof JwtVerifiedCredential
    */
-  oauthUsername?: string
+  oauth_username?: string
   /**
    *
    * @type {string}
@@ -95,13 +95,13 @@ export interface JwtVerifiedCredential {
    * @type {string}
    * @memberof JwtVerifiedCredential
    */
-  oauthAccountId?: string
+  oauth_account_id?: string
   /**
    *
    * @type {Array<string>}
    * @memberof JwtVerifiedCredential
    */
-  oauthAccountPhotos?: Array<string>
+  oauth_account_photos?: Array<string>
   /**
    *
    * @type {Array<string>}
