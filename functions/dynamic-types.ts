@@ -164,7 +164,7 @@ type WalletProperties = {
    */
   isAuthenticatorAttached: boolean
 }
-declare enum JwtVerifiedCredentialFormatEnum {
+export declare enum JwtVerifiedCredentialFormatEnum {
   Blockchain = 'blockchain',
   Email = 'email',
   Oauth = 'oauth',

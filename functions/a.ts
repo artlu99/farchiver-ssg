@@ -3,6 +3,8 @@ import {
   addressesEqual,
   allowCorsResponse,
   getAddressFromPayload,
+  getFidDetailFromPayload,
+  getFormatFromPayload,
   isRequestAllowed,
   misdirection,
   newResponse,
@@ -10,6 +12,17 @@ import {
   sort,
 } from './helpers'
 import { Env, AssetDescription, FidDetail } from './types'
+import { JwtVerifiedCredentialFormatEnum } from './dynamic-types'
+
+const getFidDetailFromAddress = async (env: Env, address: string) => {
+  const fidDetails: FidDetail[] = JSON.parse(await env.KV.get('fids'))
+  const fidDetail = fidDetails.find((fd) =>
+    fd.connected_addresses.some((ca) => addressesEqual(ca, address))
+  )
+  delete fidDetail?.connected_addresses
+
+  return fidDetail ?? undefined
+}
 
 export const onRequest: PagesFunction<Env> = async (context) => {
   const { request, env } = context
@@ -56,17 +69,15 @@ export const onRequest: PagesFunction<Env> = async (context) => {
   if (!isValid) return misdirection(env)
 
   const address = getAddressFromPayload(payload) ?? 'undefined'
+  const format = getFormatFromPayload(payload)
+  const fidDetail =
+    format === JwtVerifiedCredentialFormatEnum.Blockchain
+      ? await getFidDetailFromAddress(env, address)
+      : getFidDetailFromPayload(payload)
 
   const assetDescriptions: AssetDescription[] = JSON.parse(
     await env.KV.get('assets')
   )
-
-  const fidDetails: FidDetail[] = JSON.parse(await env.KV.get('fids'))
-  const fidDetail = fidDetails.find((fd) =>
-    fd.connected_addresses.some((ca) => addressesEqual(ca, address))
-  )
-  delete fidDetail?.connected_addresses
-
   const fid = fidDetail?.fid ?? 'undefined'
 
   const owned: AssetDescription[] = sort(

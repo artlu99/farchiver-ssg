@@ -35,6 +35,18 @@ export const misdirection = (env: Env) => newResponse('[]', env)
 
 export const redirection = (url: string) => Response.redirect(url, 301)
 
+export const getFormatFromPayload = (payload) => {
+  const verifiedCredentials: JwtVerifiedCredential[] =
+    payload.verified_credentials ?? []
+
+  const format =
+    verifiedCredentials?.length > 0
+      ? verifiedCredentials[0].format ?? undefined
+      : undefined
+
+  return format
+}
+
 export const getAddressFromPayload = (payload) => {
   const verifiedCredentials: JwtVerifiedCredential[] =
     payload.verified_credentials ?? []
@@ -45,6 +57,25 @@ export const getAddressFromPayload = (payload) => {
       : undefined
 
   return address
+}
+
+export const getFidDetailFromPayload = (payload) => {
+  const verifiedCredentials: JwtVerifiedCredential[] =
+    payload.verified_credentials ?? []
+
+  const fid =
+    verifiedCredentials?.length > 0
+      ? verifiedCredentials[0].oauthAccountId ?? undefined
+      : undefined
+
+  return fid
+    ? {
+        fid: fid,
+        username: verifiedCredentials[0].oauthUsername,
+        pfp: verifiedCredentials[0].oauthAccountPhotos,
+        connected_addresses: [],
+      }
+    : undefined
 }
 
 // radash

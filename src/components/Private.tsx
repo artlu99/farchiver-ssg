@@ -55,8 +55,6 @@ export default function Private() {
   const dynamicJwtToken = getAuthToken()
   const { user } = useDynamicContext()
 
-  console.log('dynamic:', user?.verifiedCredentials)
-
   useEffect(() => {
     dynamicJwtToken &&
       axios
