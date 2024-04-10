@@ -48,8 +48,7 @@ export const getFidDetailFromPayload = (payload): FidDetail | undefined => {
         pfp:
           verifiedCredentials[0].oauth_account_photos.length > 0
             ? verifiedCredentials[0].oauth_account_photos[0]
-            : undefined,
-        connected_addresses: [],
+            : undefined
       }
     : undefined
 
