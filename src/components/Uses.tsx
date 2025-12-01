@@ -1,5 +1,5 @@
 import ExternalLink from "components/ExternalLink";
-import { MoveLeft } from "lucide-react";
+import { ArrowLeft as MoveLeftIcon } from "react-feather";
 import { Link } from "wouter";
 
 export default function () {
@@ -294,8 +294,8 @@ export default function () {
 			</div>
 			<div>
 				<Link href="/">
-					<button className="btn btn-neutral">
-						<MoveLeft />
+					<button type="button" className="btn btn-neutral">
+						<MoveLeftIcon />
 					</button>
 				</Link>
 			</div>

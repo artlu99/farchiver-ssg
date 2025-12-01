@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { shortenHash } from "helpers/formatUtils";
 import { tarballsBaseUrl } from "helpers/getAssetsUrls";
-import { CopyIcon } from "lucide-react";
+import { Copy as CopyIcon } from "react-feather";
 import type { AssetDescription } from "types";
 
 const TIMESTAMP_FORMAT = "YYYY-MM-DD";

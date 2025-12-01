@@ -7,13 +7,13 @@
 		"build": "cross-env NODE_ENV=production tsc && vite build"
 	},
 	"dependencies": {
-		"@dynamic-labs/sdk-react-core": "^1.4.19",
+		"@dynamic-labs/sdk-react-core": "^4.48.0",
 		"axios": "^1.13.2",
 		"dayjs": "^1.11.19",
 		"jotai": "^2.15.2",
-		"lucide-react": "^0.367.0",
-		"preact": "10.20.2",
+		"preact": "10.28.0",
 		"react-farcaster-embed": "^1.11.0",
+		"react-feather": "^2.0.10",
 		"viem": "^2.40.3",
 		"wouter": "^3.8.0"
 	},
@@ -22,15 +22,15 @@
 		"@preact/preset-vite": "^2.10.2",
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.17",
-		"@types/node": "^20.19.25",
-		"@vitejs/plugin-react": "^4.7.0",
-		"cross-env": "^7.0.3",
+		"@types/node": "^24.10.1",
+		"@vitejs/plugin-react": "^5.1.1",
+		"cross-env": "^10.1.0",
 		"daisyui": "^5.5.5",
-		"rollup-plugin-visualizer": "^5.14.0",
+		"rollup-plugin-visualizer": "^6.0.5",
 		"tailwindcss": "^4.1.17",
-		"typescript": "5.4.4",
-		"vite": "^5.4.21",
-		"vite-tsconfig-paths": "^4.3.2",
-		"wrangler": "^3.114.15"
+		"typescript": "5.9.3",
+		"vite": "^7.2.6",
+		"vite-tsconfig-paths": "^5.1.4",
+		"wrangler": "^4.51.0"
 	}
 }

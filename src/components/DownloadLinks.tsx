@@ -1,6 +1,6 @@
 import { ipfsPublicFolderCid, tarballsBaseUrl } from "helpers/getAssetsUrls";
-import { CopyIcon } from "lucide-react";
 import type { FunctionComponent } from "preact";
+import { Copy as CopyIcon } from "react-feather";
 
 interface DownloadLinksProps
 	extends Omit<React.HTMLProps<HTMLAnchorElement>, "href"> {

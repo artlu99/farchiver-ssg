@@ -3,17 +3,16 @@ import axios from "axios";
 import assetsTable from "components/AssetsTable";
 import ExternalLink from "components/ExternalLink";
 import Signup from "components/Signup";
-import getDeFormId from "helpers/getDeFormId";
 import { useEffect, useState } from "preact/hooks";
 import type { AssetDescription, FidDetail } from "types";
 
-const deformLink = `https://app.deform.cc/form/${getDeFormId}`;
+const requestMoreLink = `https://t.me/artlu99`;
 
 const signupMessage = <Signup />;
 const requestMoreMessage = (
 	<div>
 		Request more Farchives via{" "}
-		<ExternalLink href={deformLink}>DeForm</ExternalLink>.
+		<ExternalLink href={requestMoreLink}>Telegram</ExternalLink>.
 	</div>
 );
 const noFarchivesFoundMessage = (

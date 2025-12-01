@@ -1,11 +1,11 @@
 import ExternalLink from "components/ExternalLink";
 import viz from "img/viz.gif";
-import { ExternalLinkIcon } from "lucide-react";
+import { ExternalLink as ExternalLinkIcon } from "react-feather";
 
 export default function () {
 	return (
 		<>
-			<img src={viz} />
+			<img src={viz} alt="Animated Data Vizualization" />
 			<div className="mx-5 text-left">
 				<h3>PAID SERVICE</h3>
 				<ul>

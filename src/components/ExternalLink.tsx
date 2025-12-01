@@ -8,13 +8,13 @@ const ExternalLink: FunctionComponent<ExternalLinkProps> = ({
 	href,
 	children,
 	rel,
-	...rest
+	className,
 }: ExternalLinkProps) => (
 	<a
 		target="_blank"
 		rel={`noopener noreferrer${rel ? ` ${rel}` : ""}`}
 		href={href}
-		{...rest}
+		className={className}
 	>
 		{children ?? href}
 	</a>

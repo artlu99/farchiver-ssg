@@ -1,6 +1,6 @@
 import ExternalLink from "components/ExternalLink";
-import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import { WarpcastIcon } from "react-farcaster-embed/icons";
+import { ExternalLink as ExternalLinkIcon, GitHub as GithubIcon } from "react-feather";
 import { Link } from "wouter";
 
 export default function () {
@@ -45,7 +45,7 @@ export default function () {
 			<footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
 				<Link className="link link-hover" href="/">
 					<aside className="items-center grid-flow-col">
-						<span role="img">🌌</span>
+						<span role="img" className={`text-2xl`}>🌌</span>
 						<p>
 							Farchiver <br />
 							<i>the easiest way to save your Farcaster activity</i>

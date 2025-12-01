@@ -4,7 +4,7 @@ import {
 } from "@dynamic-labs/sdk-react-core";
 import themeSelection from "atoms/themeSelection";
 import { useAtom } from "jotai";
-import { MoonIcon, SunIcon } from "lucide-react";
+import { Moon as MoonIcon, Sun as SunIcon } from "react-feather";
 
 const Navbar = () => {
 	const [theme, setTheme] = useAtom(themeSelection);
@@ -17,13 +17,14 @@ const Navbar = () => {
 			<div className="flex-1">
 				{user ? (
 					<button
-						class="btn btn-wide btn-square btn-accent"
+						type="button"
+						className="btn btn-wide btn-square btn-accent"
 						onClick={() => handleLogOut()}
 					>
 						Log out
 					</button>
 				) : (
-					<button class="btn btn-wide btn-square btn-accent">
+					<button type="button" className="btn btn-wide btn-square btn-accent">
 						<DynamicConnectButton>Connect wallet</DynamicConnectButton>
 					</button>
 				)}
