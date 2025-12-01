@@ -7,32 +7,32 @@
     "build": "cross-env NODE_ENV=production tsc && vite build"
   },
   "dependencies": {
-    "@dynamic-labs/sdk-react-core": "^1.4.11",
-    "axios": "^1.6.8",
-    "dayjs": "^1.11.10",
-    "jotai": "^2.8.0",
+    "@dynamic-labs/sdk-react-core": "^1.4.19",
+    "axios": "^1.13.2",
+    "dayjs": "^1.11.19",
+    "jotai": "^2.15.2",
     "lucide-react": "^0.367.0",
-    "preact": "^10.20.2",
-    "react-farcaster-embed": "^1.4.7",
-    "viem": "^2.9.15",
-    "wouter": "^3.1.2"
+    "preact": "10.20.2",
+    "react-farcaster-embed": "^1.11.0",
+    "viem": "^2.40.3",
+    "wouter": "^3.8.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240405.0",
-    "@preact/preset-vite": "^2.8.2",
-    "@tailwindcss/typography": "^0.5.12",
-    "@types/node": "^20.12.7",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
+    "@cloudflare/workers-types": "^4.20251128.0",
+    "@preact/preset-vite": "^2.10.2",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^20.19.25",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.22",
     "cross-env": "^7.0.3",
-    "daisyui": "^4.10.1",
-    "postcss": "^8.4.38",
+    "daisyui": "^4.12.24",
+    "postcss": "^8.5.6",
     "react-scripts": "^5.0.1",
-    "rollup-plugin-visualizer": "^5.12.0",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.4",
-    "vite": "^5.2.8",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "tailwindcss": "^3.4.18",
+    "typescript": "5.4.4",
+    "vite": "^5.4.21",
     "vite-tsconfig-paths": "^4.3.2",
-    "wrangler": "^3.48.0"
+    "wrangler": "^3.114.15"
   }
 }
