@@ -1,8 +1,7 @@
-import { ExternalLinkIcon } from 'lucide-react'
-import { GithubIcon } from 'lucide-react'
-import { Link } from 'wouter'
-import { WarpcastIcon } from 'react-farcaster-embed/icons'
 import ExternalLink from 'components/ExternalLink'
+import { ExternalLinkIcon, GithubIcon } from 'lucide-react'
+import { WarpcastIcon } from 'react-farcaster-embed/icons'
+import { Link } from 'wouter'
 
 export default function () {
   return (
@@ -26,7 +25,7 @@ export default function () {
           <Link className="link link-hover" href="/castimonials">
             Castimonials
           </Link>
-          <a className="text-gray-400">Bookmarks</a>
+          <a className="text-gray-400" href="/">Bookmarks</a>
         </nav>
         <nav>
           <h6 className="footer-title">About</h6>
@@ -42,7 +41,7 @@ export default function () {
         </nav>
       </footer>
       <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-        <Link clasName="link link-hover" href="/">
+        <Link className="link link-hover" href="/">
           <aside className="items-center grid-flow-col">
             <span role="img">🌌</span>
             <p>

@@ -36,7 +36,7 @@ const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
                       '.tar.gz' +
                       (a.encrypted ? '.gpg' : '')
                     }
-                    alt={a.description}
+                    title={a.description}
                   >
                     {a.tarball + '.tar.gz' + (a.encrypted ? '.gpg' : '')}
                   </a>
