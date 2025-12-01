@@ -1,1 +1,1 @@
-export default import.meta.env.VITE_DEFORM_ID || ''
+export default import.meta.env.VITE_DEFORM_ID || "";

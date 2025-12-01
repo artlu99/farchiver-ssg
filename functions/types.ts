@@ -1,21 +1,21 @@
 export interface Env {
-  FARCHIVER_SECRET: string
-  ENVIRONMENT: string
-  KV: KVNamespace
+	FARCHIVER_SECRET: string;
+	ENVIRONMENT: string;
+	KV: KVNamespace;
 }
 
 export type FidDetail = {
-  fid: string
-  username: string
-  pfp?: string
-}
+	fid: string;
+	username: string;
+	pfp?: string;
+};
 
 export type AssetDescription = {
-  tarball: string
-  timestamp: number
-  sharedwith: string[]
-  owners: string[]
-  description: string
-  encrypted?: boolean
-  cid?: string
-}
+	tarball: string;
+	timestamp: number;
+	sharedwith: string[];
+	owners: string[];
+	description: string;
+	encrypted?: boolean;
+	cid?: string;
+};

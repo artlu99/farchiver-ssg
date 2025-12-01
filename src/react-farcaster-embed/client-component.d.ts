@@ -1,1 +1,1 @@
-declare module 'react-farcaster-embed/dist/client';
+declare module "react-farcaster-embed/dist/client";

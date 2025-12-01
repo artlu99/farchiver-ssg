@@ -1,36 +1,36 @@
 {
-  "name": "farchiver-ssg",
-  "version": "1.0.0",
-  "license": "MIT",
-  "scripts": {
-    "start": "vite",
-    "build": "cross-env NODE_ENV=production tsc && vite build"
-  },
-  "dependencies": {
-    "@dynamic-labs/sdk-react-core": "^1.4.19",
-    "axios": "^1.13.2",
-    "dayjs": "^1.11.19",
-    "jotai": "^2.15.2",
-    "lucide-react": "^0.367.0",
-    "preact": "10.20.2",
-    "react-farcaster-embed": "^1.11.0",
-    "viem": "^2.40.3",
-    "wouter": "^3.8.0"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20251128.0",
-    "@preact/preset-vite": "^2.10.2",
-    "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.1.17",
-    "@types/node": "^20.19.25",
-    "@vitejs/plugin-react": "^4.7.0",
-    "cross-env": "^7.0.3",
-    "daisyui": "^5.5.5",
-    "rollup-plugin-visualizer": "^5.14.0",
-    "tailwindcss": "^4.1.17",
-    "typescript": "5.4.4",
-    "vite": "^5.4.21",
-    "vite-tsconfig-paths": "^4.3.2",
-    "wrangler": "^3.114.15"
-  }
+	"name": "farchiver-ssg",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"start": "vite",
+		"build": "cross-env NODE_ENV=production tsc && vite build"
+	},
+	"dependencies": {
+		"@dynamic-labs/sdk-react-core": "^1.4.19",
+		"axios": "^1.13.2",
+		"dayjs": "^1.11.19",
+		"jotai": "^2.15.2",
+		"lucide-react": "^0.367.0",
+		"preact": "10.20.2",
+		"react-farcaster-embed": "^1.11.0",
+		"viem": "^2.40.3",
+		"wouter": "^3.8.0"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20251128.0",
+		"@preact/preset-vite": "^2.10.2",
+		"@tailwindcss/typography": "^0.5.19",
+		"@tailwindcss/vite": "^4.1.17",
+		"@types/node": "^20.19.25",
+		"@vitejs/plugin-react": "^4.7.0",
+		"cross-env": "^7.0.3",
+		"daisyui": "^5.5.5",
+		"rollup-plugin-visualizer": "^5.14.0",
+		"tailwindcss": "^4.1.17",
+		"typescript": "5.4.4",
+		"vite": "^5.4.21",
+		"vite-tsconfig-paths": "^4.3.2",
+		"wrangler": "^3.114.15"
+	}
 }

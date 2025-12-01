@@ -1,4 +1,4 @@
-import { atom } from 'jotai'
-import getUserCount from 'helpers/getUserCounts'
+import getUserCount from "helpers/getUserCounts";
+import { atom } from "jotai";
 
-export default atom(getUserCount())
+export default atom(getUserCount());
