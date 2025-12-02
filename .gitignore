@@ -16,3 +16,4 @@ bun.lock
 
 # Cloudflare
 .wrangler
+.dev.vars

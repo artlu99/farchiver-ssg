@@ -7,19 +7,20 @@
 - likes+follows = links
 - replies/threads linked
 
-contact: [@farchiver](https://warpcast.com/farchiver)
+contact: [@artlu99](https://t.me/artlu99)
 
-# Sign up via [DeForm](https://app.deform.cc/form/0e15e3e2-1252-405e-bb8e-9a4c4da0bbcd)
+# Sign up via [Farchiver](https://farchiver.xyz)
 
 ---
 
 The Farcaster protocol represents verifiable live state.
 
-Old casts are pruned after 1yr,
+Old casts used to be pruned after 1yr,
 likes after 3mos,
+now, after the user's paid storage expires, and
 
 PFP bio's & linked addresses are whatever the owner set last.
 
-**Now you can own your content, local-first FTW!**
+**Now you can own your content forever!**
 
 _Frontend code following the [Borodutch/frontend-starter](https://github.com/Borodutch/frontend-starter) template_.

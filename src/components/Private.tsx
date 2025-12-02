@@ -1,9 +1,9 @@
 import { getAuthToken, useDynamicContext } from "@dynamic-labs/sdk-react-core";
-import axios from "axios";
 import assetsTable from "components/AssetsTable";
 import ExternalLink from "components/ExternalLink";
 import Signup from "components/Signup";
 import { useEffect, useState } from "preact/hooks";
+import axios from "redaxios";
 import type { AssetDescription, FidDetail } from "types";
 
 const requestMoreLink = `https://t.me/artlu99`;

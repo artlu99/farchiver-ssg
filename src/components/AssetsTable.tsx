@@ -1,10 +1,7 @@
-import dayjs from "dayjs";
 import { shortenHash } from "helpers/formatUtils";
 import { tarballsBaseUrl } from "helpers/getAssetsUrls";
 import { Copy as CopyIcon } from "react-feather";
 import type { AssetDescription } from "types";
-
-const TIMESTAMP_FORMAT = "YYYY-MM-DD";
 
 const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
 	<div className="flex flex-col w-full">
@@ -21,9 +18,9 @@ const assetsTable = (sectionTitle: string, assets: AssetDescription[]) => (
 				</thead>
 				<tbody>
 					{assets.map((a) => {
-						const timestampStr = dayjs
-							.unix(a.timestamp)
-							.format(TIMESTAMP_FORMAT);
+						const timestampStr = new Date(a.timestamp).toLocaleDateString(
+							"en-CA", // "YYYY-MM-DD" ISO 8601
+						);
 						return (
 							<tr className="hover">
 								<th>{a.description}</th>

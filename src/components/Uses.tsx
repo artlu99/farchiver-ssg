@@ -59,24 +59,6 @@ export default function () {
 							<td>🆓</td>
 						</tr>
 						<tr className="hover">
-							<th>👋</th>
-							<td>
-								<ExternalLink href="https://warpcast.com/thatguyintech">
-									@thatguyintech
-								</ExternalLink>{" "}
-								<ExternalLink href="https://warpcast.com/unhappiimochii">
-									@unhappiimochii
-								</ExternalLink>
-							</td>
-							<td>the easiest way to build web3 forms</td>
-							<td>
-								<ExternalLink href="https://www.deform.cc/">
-									DeForm
-								</ExternalLink>
-							</td>
-							<td>🆓</td>
-						</tr>
-						<tr className="hover">
 							<th>🅿️</th>
 							<td>
 								<ExternalLink href="https://warpcast.com/colin">
