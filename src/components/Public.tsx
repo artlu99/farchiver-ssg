@@ -11,7 +11,7 @@ export default function () {
 					<ul>
 						<li>
 							reply guy Nano Farchive by @artlu{" "}
-							<DownloadLinks filename={"artlu_20251201.tar.gz"} text={"64KB"} />
+							<DownloadLinks filename={"artlu_20251201.tar.gz"} text={"99KB"} />
 						</li>
 					</ul>
 					<p className="text-sm italic">as of 11 Jan 2024:</p>
