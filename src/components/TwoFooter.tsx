@@ -1,5 +1,5 @@
 import ExternalLink from "components/ExternalLink";
-import { WarpcastIcon } from "react-farcaster-embed/icons";
+import { FarcasterIcon } from "react-farcaster-embed/icons";
 import { ExternalLink as ExternalLinkIcon, GitHub as GithubIcon } from "react-feather";
 import { Link } from "wouter";
 
@@ -57,8 +57,8 @@ export default function () {
 						<ExternalLink href="https://github.com/artlu99/farchiver-ssg">
 							<GithubIcon />
 						</ExternalLink>
-						<ExternalLink href="https://warpcast.com/farchiver">
-							<WarpcastIcon />
+						<ExternalLink href="https://farcaster.xyz/farchiver">
+							<FarcasterIcon />
 						</ExternalLink>
 					</div>
 				</nav>

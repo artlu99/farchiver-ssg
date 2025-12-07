@@ -22,7 +22,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
 
 	const _key = `${params.get("username")}/${params.get("castHashPrefix")}`;
 
-	const sourceUrl = `https://client.warpcast.com/v2/user-thread-casts?${params}`;
+	const sourceUrl = `https://client.farcaster.xyz/v2/user-thread-casts?${params}`;
 
 	const response = await fetch(sourceUrl, init);
 	const results = await gatherResponse(response);

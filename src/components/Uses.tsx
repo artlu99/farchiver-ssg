@@ -34,7 +34,7 @@ export default function () {
 							</td>
 							<td>the easiest way to save your activity on Farcaster</td>
 							<td>
-								<ExternalLink href="https://warpcast.com/farchiver">
+								<ExternalLink href="https://farcaster.xyz/farchiver">
 									@farchiver
 								</ExternalLink>
 							</td>
@@ -43,7 +43,7 @@ export default function () {
 						<tr className="hover">
 							<th>💎</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/kepano">
+								<ExternalLink href="https://farcaster.xyz/kepano">
 									@kepano
 								</ExternalLink>
 							</td>
@@ -61,7 +61,7 @@ export default function () {
 						<tr className="hover">
 							<th>🅿️</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/colin">
+								<ExternalLink href="https://farcaster.xyz/colin">
 									@colin
 								</ExternalLink>
 							</td>
@@ -76,7 +76,7 @@ export default function () {
 						<tr className="hover">
 							<th>📸</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/kenny">
+								<ExternalLink href="https://farcaster.xyz/kenny">
 									@kenny
 								</ExternalLink>
 							</td>
@@ -89,10 +89,10 @@ export default function () {
 						<tr className="hover">
 							<th>🪐</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/rish">
+								<ExternalLink href="https://farcaster.xyz/rish">
 									@rish
 								</ExternalLink>{" "}
-								<ExternalLink href="https://warpcast.com/manan">
+								<ExternalLink href="https://farcaster.xyz/manan">
 									@manan
 								</ExternalLink>
 							</td>
@@ -105,7 +105,7 @@ export default function () {
 						<tr className="hover">
 							<th>👝</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/dynamic">
+								<ExternalLink href="https://farcaster.xyz/dynamic">
 									@dynamic
 								</ExternalLink>
 							</td>
@@ -118,10 +118,10 @@ export default function () {
 						<tr className="hover">
 							<th>🟪</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/dwr.eth">
+								<ExternalLink href="https://farcaster.xyz/dwr.eth">
 									@dwr.eth
 								</ExternalLink>{" "}
-								<ExternalLink href="https://warpcast.com/v">@v</ExternalLink>
+								<ExternalLink href="https://farcaster.xyz/v">@v</ExternalLink>
 							</td>
 							<td>
 								permissionless Hub (Rust) + Replicator (PostgreSQL).
@@ -137,7 +137,7 @@ export default function () {
 						<tr className="hover">
 							<th>💪🏼</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/vrypan.eth">
+								<ExternalLink href="https://farcaster.xyz/vrypan.eth">
 									@vrypan.eth
 								</ExternalLink>
 							</td>
@@ -152,12 +152,12 @@ export default function () {
 						<tr className="hover">
 							<th>🌈</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/mikedemarais.eth">
+								<ExternalLink href="https://farcaster.xyz/mikedemarais.eth">
 									@mikedemarais.eth
 								</ExternalLink>
 							</td>
 							<td>
-								<ExternalLink href="https://warpcast.com/rainbow">
+								<ExternalLink href="https://farcaster.xyz/rainbow">
 									experience Crypto in Color
 								</ExternalLink>
 							</td>
@@ -171,12 +171,12 @@ export default function () {
 						<tr className="hover">
 							<th>Ξ</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/vitalik.eth">
+								<ExternalLink href="https://farcaster.xyz/vitalik.eth">
 									@vitalik.eth
 								</ExternalLink>
 							</td>
 							<td>
-								<ExternalLink href="https://warpcast.com/~/channel/evm">
+								<ExternalLink href="https://farcaster.xyz/~/channel/evm">
 									Ethereum EVM
 								</ExternalLink>
 							</td>
@@ -201,7 +201,7 @@ export default function () {
 						<tr className="hover">
 							<th>🤖</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/farcasteradmin.eth">
+								<ExternalLink href="https://farcaster.xyz/farcasteradmin.eth">
 									@farcasteradmin.eth
 								</ExternalLink>
 							</td>
@@ -216,7 +216,7 @@ export default function () {
 						<tr className="hover">
 							<th>✨</th>
 							<td>
-								<ExternalLink href="https://warpcast.com/pugson">
+								<ExternalLink href="https://farcaster.xyz/pugson">
 									@pugson
 								</ExternalLink>
 							</td>
