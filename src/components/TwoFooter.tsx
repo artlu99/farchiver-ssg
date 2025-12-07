@@ -6,7 +6,7 @@ import { Link } from "wouter";
 export default function () {
 	return (
 		<div>
-			<footer className="footer p-10 bg-base-200 text-base-content">
+			<footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
 				<nav>
 					<h6 className="footer-title">Public</h6>
 					<Link className="link link-hover" href="/public">
