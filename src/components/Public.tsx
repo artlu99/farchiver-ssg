@@ -1,5 +1,6 @@
 import DownloadLinks from "components/DownloadLinks";
 import Fiofe from "components/Fiofe";
+import ExternalLink from "./ExternalLink";
 
 export default function () {
 	return (
@@ -10,7 +11,11 @@ export default function () {
 					<p className="text-sm italic">as of 1 Dec 2025:</p>
 					<ul>
 						<li>
-							reply guy Nano Farchive by @artlu{" "}
+							reply guy{" "}
+							<ExternalLink href="https://20251201-artlu.farchiver.xyz">
+								Nano Farchive
+							</ExternalLink>{" "}
+							by @artlu{" "}
 							<DownloadLinks filename={"artlu_20251201.tar.gz"} text={"99KB"} />
 						</li>
 					</ul>
